@@ -1,3 +1,5 @@
+import MacWaitlist from './components/MacWaitlist'
+
 // ダウンロードURLはここで管理
 const DOWNLOAD_URL_WINDOWS = "https://github.com/shusuke1109-stack/hubchat-web/releases/download/v1.0.0/HubChat.Setup.1.0.0.exe";
 
@@ -188,6 +190,10 @@ export default function Home() {
             <span>🍎</span>
             Mac版（近日公開）
           </div>
+        </div>
+        <div className="mt-6">
+          <p className="text-sm mb-3" style={{ color: "#7878a8" }}>Mac版のリリース通知を受け取る</p>
+          <MacWaitlist />
         </div>
         <p className="mt-6 text-sm" style={{ color: "#7878a8" }}>
           クレジットカード登録なしで14日間無料トライアル
