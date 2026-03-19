@@ -1,5 +1,5 @@
 // ダウンロードURLはここで管理
-const DOWNLOAD_URL_WINDOWS = "https://github.com/shusuke1109-stack/hubchat-web/releases/latest/download/HubChat-Setup-1.0.0.exe";
+const DOWNLOAD_URL_WINDOWS = "https://github.com/shusuke1109-stack/hubchat-web/releases/download/v1.0.0/HubChat.Setup.1.0.0.exe";
 
 const SERVICES = [
   { name: "Slack", icon: "💬" },
