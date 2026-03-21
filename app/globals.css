@@ -7,6 +7,7 @@
   --card-bg: #1e1e38;
   --text-1: #e8e8f8;
   --text-2: #7878a8;
+  --font-base: var(--font-noto), "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
 html {
@@ -20,4 +21,16 @@ html {
 body {
   background: var(--content-bg);
   color: var(--text-1);
+  font-family: var(--font-base);
 }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-in-up {
+  animation: fadeInUp 0.5s ease both;
+}
+.fade-delay-1 { animation-delay: 0.1s; }
+.fade-delay-2 { animation-delay: 0.2s; }
+.fade-delay-3 { animation-delay: 0.3s; }
