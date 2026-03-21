@@ -7,7 +7,7 @@ export default function TermsPage() {
       >
         <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
           <a href="/" className="flex items-center gap-1">
-            <span className="text-2xl font-bold" style={{ color: "#e94560" }}>Hub</span>
+            <span className="text-2xl font-bold" style={{ color: "#4ade80" }}>Hub</span>
             <span className="text-2xl font-bold">Chat</span>
           </a>
         </div>
@@ -96,7 +96,7 @@ export default function TermsPage() {
             <h2 className="text-xl font-bold mb-4" style={{ color: "#e8e8f8" }}>第9条（お問い合わせ）</h2>
             <p>
               本規約に関するご質問は以下までお問い合わせください：<br />
-              <a href="mailto:hubchat.support@gmail.com" style={{ color: "#e94560" }}>hubchat.support@gmail.com</a>
+              <a href="mailto:hubchat.support@gmail.com" style={{ color: "#4ade80" }}>hubchat.support@gmail.com</a>
             </p>
           </section>
         </div>

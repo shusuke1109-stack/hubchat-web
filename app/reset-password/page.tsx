@@ -104,8 +104,8 @@ function ResetPasswordForm() {
             style={{
               display: 'block',
               padding: '11px',
-              background: '#e94560',
-              color: '#fff',
+              background: '#4ade80',
+              color: '#0d1526',
               borderRadius: '8px',
               fontWeight: '600',
               fontSize: '14px',
@@ -119,14 +119,14 @@ function ResetPasswordForm() {
       ) : status === 'error' && !sessionReady ? (
         <div style={{ textAlign: 'center' }}>
           <div style={{ fontSize: '48px', marginBottom: '16px' }}>⚠️</div>
-          <p style={{ color: '#e94560', fontSize: '14px', lineHeight: '1.6', marginBottom: '24px' }}>{message}</p>
+          <p style={{ color: '#4ade80', fontSize: '14px', lineHeight: '1.6', marginBottom: '24px' }}>{message}</p>
           <a
             href="/"
             style={{
               display: 'block',
               padding: '11px',
-              background: '#e94560',
-              color: '#fff',
+              background: '#4ade80',
+              color: '#0d1526',
               borderRadius: '8px',
               fontWeight: '600',
               fontSize: '14px',
@@ -182,7 +182,7 @@ function ResetPasswordForm() {
           {message && (
             <p style={{
               fontSize: '12px',
-              color: status === 'error' ? '#e94560' : '#4caf50',
+              color: status === 'error' ? '#f87171' : '#4ade80',
               marginBottom: '12px',
               textAlign: 'center',
               lineHeight: '1.4',
@@ -196,8 +196,8 @@ function ResetPasswordForm() {
             style={{
               width: '100%',
               padding: '11px',
-              background: '#e94560',
-              color: '#fff',
+              background: '#4ade80',
+              color: '#0d1526',
               border: 'none',
               borderRadius: '8px',
               fontSize: '14px',
@@ -230,7 +230,7 @@ export default function ResetPasswordPage() {
     >
       <div style={{ marginBottom: '24px', textAlign: 'center' }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '2px', marginBottom: '4px' }}>
-          <span style={{ fontSize: '22px', fontWeight: '900', color: '#e94560' }}>Hub</span>
+          <span style={{ fontSize: '22px', fontWeight: '900', color: '#4ade80' }}>Hub</span>
           <span style={{ fontSize: '22px', fontWeight: '900' }}>Chat</span>
         </div>
       </div>

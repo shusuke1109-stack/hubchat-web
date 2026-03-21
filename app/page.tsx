@@ -55,13 +55,12 @@ export default function Home() {
       >
         <div className="max-w-5xl mx-auto px-5 py-4 flex items-center justify-between">
           <div className="flex items-center gap-1 select-none">
-            <span className="text-xl font-black" style={{ color: "#e94560" }}>Hub</span>
+            <span className="text-xl font-black" style={{ color: "#4ade80" }}>Hub</span>
             <span className="text-xl font-black">Chat</span>
           </div>
           <a
             href="#download"
-            className="px-5 py-2 rounded-lg text-sm font-bold text-white transition-opacity hover:opacity-80"
-            style={{ background: "#e94560" }}
+            className="px-5 py-2 rounded-lg text-sm font-bold transition-opacity hover:opacity-80" style={{ background: "#4ade80", color: "#0d1526" }}
           >
             無料で試す
           </a>
@@ -72,13 +71,13 @@ export default function Home() {
       <section className="flex flex-col items-center justify-center text-center px-5 pt-24 pb-20">
         <div
           className="fade-in-up inline-block px-4 py-1.5 rounded-full text-xs font-bold mb-6"
-          style={{ background: "rgba(233,69,96,0.15)", color: "#e94560", border: "1px solid rgba(233,69,96,0.3)" }}
+          style={{ background: "rgba(74,222,128,0.12)", color: "#4ade80", border: "1px solid rgba(74,222,128,0.3)" }}
         >
           🎉 14日間無料トライアル実施中
         </div>
         <h1 className="fade-in-up fade-delay-1 text-4xl md:text-6xl font-black leading-tight mb-6 tracking-tight">
           全部のチャット、<br />
-          <span style={{ color: "#e94560" }}>ひとつのアプリに。</span>
+          <span style={{ color: "#4ade80" }}>ひとつのアプリに。</span>
         </h1>
         <p
           className="fade-in-up fade-delay-2 text-base md:text-lg max-w-xl mb-10 leading-relaxed"
@@ -91,8 +90,7 @@ export default function Home() {
         <div className="fade-in-up fade-delay-3 flex flex-col sm:flex-row gap-3">
           <a
             href="#download"
-            className="px-8 py-4 rounded-xl text-base font-bold text-white transition-opacity hover:opacity-80"
-            style={{ background: "#e94560" }}
+            className="px-8 py-4 rounded-xl text-base font-bold transition-opacity hover:opacity-80" style={{ background: "#4ade80", color: "#0d1526" }}
           >
             無料トライアルを始める →
           </a>
@@ -197,7 +195,7 @@ export default function Home() {
             className="p-8 rounded-2xl"
             style={{ background: "#16162a", border: "2px solid rgba(233,69,96,0.4)" }}
           >
-            <div className="text-xs font-bold mb-2" style={{ color: "#e94560" }}>個人プラン</div>
+            <div className="text-xs font-bold mb-2" style={{ color: "#4ade80" }}>個人プラン</div>
             <div className="mb-1">
               <span className="text-5xl font-black">¥380</span>
             </div>
@@ -205,15 +203,14 @@ export default function Home() {
             <ul className="text-left space-y-3 mb-8">
               {PRICING_ITEMS.map((item) => (
                 <li key={item} className="flex items-center gap-3 text-sm">
-                  <span style={{ color: "#e94560" }}>✓</span>
+                  <span style={{ color: "#4ade80" }}>✓</span>
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
             <a
               href="#download"
-              className="block w-full py-3.5 rounded-xl font-bold text-white text-center transition-opacity hover:opacity-80"
-              style={{ background: "#e94560" }}
+              className="block w-full py-3.5 rounded-xl font-bold text-center transition-opacity hover:opacity-80" style={{ background: "#4ade80", color: "#0d1526" }}
             >
               14日間無料で試す
             </a>
@@ -231,7 +228,7 @@ export default function Home() {
           <a
             href={DOWNLOAD_URL_WINDOWS}
             className="flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-bold transition-opacity hover:opacity-80"
-            style={{ background: "#e94560", color: "#fff" }}
+            style={{ background: "#4ade80", color: "#0d1526" }}
           >
             <span>🪟</span>
             Windows 版をダウンロード

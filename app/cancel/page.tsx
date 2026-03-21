@@ -9,8 +9,8 @@ export default function CancelPage() {
       </p>
       <a
         href="/"
-        className="px-8 py-3 rounded-xl font-bold text-white transition-opacity hover:opacity-85"
-        style={{ background: "#e94560" }}
+        className="px-8 py-3 rounded-xl font-bold transition-opacity hover:opacity-85" style={{ color: "#0d1526" }}
+        style={{ background: "#4ade80" }}
       >
         トップページへ戻る
       </a>
