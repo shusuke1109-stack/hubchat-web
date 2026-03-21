@@ -1,3 +1,8 @@
+import MacWaitlist from './components/MacWaitlist'
+
+// ダウンロードURLはここで管理
+const DOWNLOAD_URL_WINDOWS = "https://github.com/shusuke1109-stack/hubchat-web/releases/download/v1.0.0/HubChat.Setup.1.0.0.exe";
+
 const PAIN_POINTS = [
   { icon: "😰", text: "チャットが増えすぎて返信漏れが起きる" },
   { icon: "⏱️", text: "アプリを切り替えるたびに時間が無駄になる" },
@@ -18,7 +23,7 @@ const SOLUTIONS = [
   {
     icon: "🇯🇵",
     title: "日本のチャットツールに完全対応",
-    desc: "Chatwork・LINE WORKS・Chatworkなど、日本のビジネスで使われるサービスに対応。海外ツールだけじゃありません。",
+    desc: "Chatwork・LINE WORKS など、日本のビジネスで使われるサービスに対応。海外ツールだけじゃありません。",
   },
 ];
 
@@ -225,7 +230,7 @@ export default function Home() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="#"
+            href={DOWNLOAD_URL_WINDOWS}
             className="flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-bold transition-opacity hover:opacity-80"
             style={{ background: "#e94560", color: "#fff" }}
           >
@@ -240,12 +245,10 @@ export default function Home() {
             Mac版（近日公開）
           </div>
         </div>
-        <p className="mt-6 text-xs" style={{ color: "#7878a8" }}>
-          Mac版のリリース通知を受け取りたい方は{" "}
-          <a href="mailto:support@hub-chat.net" style={{ color: "#e94560" }} className="hover:underline">
-            こちらからご登録ください
-          </a>
-        </p>
+        <div className="mt-8">
+          <p className="text-sm mb-1" style={{ color: "#7878a8" }}>Mac版のリリース通知を受け取る</p>
+          <MacWaitlist />
+        </div>
       </section>
 
       {/* ── Footer ── */}
