@@ -294,6 +294,7 @@ export default function Home() {
         <div className="flex flex-wrap justify-center gap-6 mb-4">
           <a href="/privacy" className="hover:text-white transition-colors">プライバシーポリシー</a>
           <a href="/terms" className="hover:text-white transition-colors">利用規約</a>
+          <a href="/tokusho" className="hover:text-white transition-colors">特定商取引法に基づく表記</a>
           <a href="mailto:hubchat.support@gmail.com" className="hover:text-white transition-colors">お問い合わせ</a>
         </div>
         <p>© 2026 HubChat. All rights reserved.</p>
