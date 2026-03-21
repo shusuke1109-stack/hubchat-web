@@ -36,6 +36,33 @@ const SERVICES = [
   { name: "LINE WORKS",  color: "#00B900", bg: "rgba(0,185,0,0.15)",   emoji: "💚" },
 ];
 
+const FAQS = [
+  {
+    q: '無料トライアルにクレジットカードは必要ですか？',
+    a: '不要です。ダウンロードしてすぐに14日間無料でご利用いただけます。',
+  },
+  {
+    q: '14日間のトライアル後はどうなりますか？',
+    a: 'トライアル期間終了後は、引き続きご利用いただくためにお支払いの手続きをお願いしています。',
+  },
+  {
+    q: '対応しているサービスはどれですか？',
+    a: 'Slack、Chatwork、Microsoft Teams、Discord、Messenger、LINE WORKSに対応しています。',
+  },
+  {
+    q: 'Mac版はありますか？',
+    a: '現在Windows版のみです。Mac版は近日公開予定です。リリース通知はページ下部からご登録ください。',
+  },
+  {
+    q: '既存のチャットアプリのデータは消えませんか？',
+    a: 'HubChatはブラウザのように各サービスを表示するだけなので、データには一切触れません。',
+  },
+  {
+    q: '現在のバージョンについて教えてください',
+    a: 'HubChatは現在β版です。まだ発展途上のプロダクトですが、皆さんのご意見をもとに改善を続けています。気になった点はお気軽にご連絡ください。',
+  },
+]
+
 const PRICING_ITEMS = [
   "登録サービス数 無制限",
   "通知バッジ対応",
@@ -73,7 +100,7 @@ export default function Home() {
           className="fade-in-up inline-block px-4 py-1.5 rounded-full text-xs font-bold mb-6"
           style={{ background: "rgba(74,222,128,0.12)", color: "#4ade80", border: "1px solid rgba(74,222,128,0.3)" }}
         >
-          🎉 14日間無料トライアル実施中
+          🎉 リリース記念 - 14日間無料トライアル実施中
         </div>
         <h1 className="fade-in-up fade-delay-1 text-4xl md:text-6xl font-black leading-tight mb-6 tracking-tight">
           全部のチャット、<br />
@@ -211,7 +238,26 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── ⑥ CTA / ダウンロードセクション ── */}
+      {/* ── ⑥ FAQ ── */}
+      <section className="py-20 px-5" style={{ background: "#16162a" }}>
+        <div className="max-w-2xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-black text-center mb-12">よくある質問</h2>
+          <div className="flex flex-col gap-4">
+            {FAQS.map((faq) => (
+              <div
+                key={faq.q}
+                className="p-6 rounded-2xl"
+                style={{ background: "#1e1e38", border: "1px solid rgba(255,255,255,0.06)" }}
+              >
+                <p className="font-bold text-sm mb-2" style={{ color: "#4ade80" }}>Q. {faq.q}</p>
+                <p className="text-sm leading-relaxed" style={{ color: "#7878a8" }}>A. {faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── ⑦ CTA / ダウンロードセクション ── */}
       <section id="download" className="py-20 px-5 text-center" style={{ background: "#16162a" }}>
         <h2 className="text-2xl md:text-3xl font-black mb-3">まず無料で試す</h2>
         <p className="text-sm mb-10" style={{ color: "#7878a8" }}>
