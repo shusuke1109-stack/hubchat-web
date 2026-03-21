@@ -32,7 +32,6 @@ const SERVICES = [
   { name: "Chatwork",    color: "#DB3E24", bg: "rgba(219,62,36,0.15)", emoji: "💼" },
   { name: "Teams",       color: "#6264A7", bg: "rgba(98,100,167,0.2)", emoji: "👥" },
   { name: "Discord",     color: "#5865F2", bg: "rgba(88,101,242,0.2)", emoji: "🎮" },
-  { name: "Gmail",       color: "#EA4335", bg: "rgba(234,67,53,0.15)", emoji: "📧" },
   { name: "Messenger",   color: "#0084FF", bg: "rgba(0,132,255,0.15)", emoji: "💙" },
   { name: "LINE WORKS",  color: "#00B900", bg: "rgba(0,185,0,0.15)",   emoji: "💚" },
 ];
@@ -259,7 +258,7 @@ export default function Home() {
         <div className="flex flex-wrap justify-center gap-6 mb-4">
           <a href="/privacy" className="hover:text-white transition-colors">プライバシーポリシー</a>
           <a href="/terms" className="hover:text-white transition-colors">利用規約</a>
-          <a href="mailto:support@hub-chat.net" className="hover:text-white transition-colors">お問い合わせ</a>
+          <a href="mailto:hubchat.support@gmail.com" className="hover:text-white transition-colors">お問い合わせ</a>
         </div>
         <p>© 2026 HubChat. All rights reserved.</p>
       </footer>

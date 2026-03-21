@@ -89,7 +89,7 @@ export default function PrivacyPage() {
             <h2 className="text-xl font-bold mb-4" style={{ color: "#e8e8f8" }}>8. お問い合わせ</h2>
             <p>
               プライバシーに関するご質問・ご要望は以下までお問い合わせください：<br />
-              <a href="mailto:support@hub-chat.net" style={{ color: "#e94560" }}>support@hub-chat.net</a>
+              <a href="mailto:hubchat.support@gmail.com" style={{ color: "#e94560" }}>hubchat.support@gmail.com</a>
             </p>
           </section>
 
