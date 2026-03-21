@@ -175,13 +175,6 @@ export default function Home() {
                 <span>{s.name}</span>
               </div>
             ))}
-            <div
-              className="flex items-center gap-2 px-5 py-3 rounded-full text-sm font-semibold"
-              style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", color: "#7878a8" }}
-            >
-              <span>➕</span>
-              <span>URLで自由に追加</span>
-            </div>
           </div>
         </div>
       </section>
@@ -193,7 +186,7 @@ export default function Home() {
           <p className="text-sm mb-12" style={{ color: "#7878a8" }}>複雑なプランなし。一つだけ。</p>
           <div
             className="p-8 rounded-2xl"
-            style={{ background: "#16162a", border: "2px solid rgba(233,69,96,0.4)" }}
+            style={{ background: "#16162a", border: "2px solid rgba(74,222,128,0.4)" }}
           >
             <div className="text-xs font-bold mb-2" style={{ color: "#4ade80" }}>個人プラン</div>
             <div className="mb-1">
