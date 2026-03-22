@@ -19,15 +19,14 @@ export default function TokushoPage() {
         <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "14px" }}>
           <tbody>
             {[
-              { label: "販売業者", value: "SKworks" },
-              { label: "運営責任者", value: "代表者" },
+              { label: "事業者（代表責任者）", value: "亀井秀介" },
               {
                 label: "所在地",
-                value: "※所在地はご請求時に遅延なく開示いたします。",
+                value: "※所在地はご請求いただければ遅滞なく開示いたします。",
               },
               {
                 label: "電話番号",
-                value: "※電話番号はご請求時に遅延なく開示いたします。",
+                value: "※電話番号はご請求いただければ遅滞なく開示いたします。",
               },
               { label: "メールアドレス", value: "hubchat.support@gmail.com" },
               { label: "サービス名", value: "HubChat" },
