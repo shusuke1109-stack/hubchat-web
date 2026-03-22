@@ -59,7 +59,7 @@ export async function POST(req: Request) {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 async function updateStatus(supabase: any, email: string, status: string) {
   const { data } = await supabase.auth.admin.listUsers()
-  const user = data?.users?.find((u) => u.email === email)
+  const user = data?.users?.find((u: { email?: string }) => u.email === email)
   if (!user) return
 
   await supabase
