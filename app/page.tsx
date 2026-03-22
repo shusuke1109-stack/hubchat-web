@@ -280,6 +280,9 @@ export default function Home() {
             Mac版（近日公開）
           </div>
         </div>
+        <p className="mt-4 text-xs" style={{ color: "#7878a8" }}>
+          ※ダウンロード後にWindowsのセキュリティ警告が表示された場合は、ファイルを右クリック→「プロパティ」→「許可する」にチェックして実行してください。
+        </p>
         <div className="mt-8">
           <p className="text-sm mb-1" style={{ color: "#7878a8" }}>Mac版のリリース通知を受け取る</p>
           <MacWaitlist />
