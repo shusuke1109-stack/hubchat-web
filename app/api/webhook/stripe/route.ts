@@ -65,11 +65,12 @@ export async function POST(req: Request) {
 }
 
 async function updateStatus(email: string, status: string) {
-  const { data } = await supabase.auth.admin.getUserByEmail(email)
-  if (!data?.user) return
+  const { data } = await supabase.auth.admin.listUsers()
+  const user = data?.users?.find((u) => u.email === email)
+  if (!user) return
 
   await supabase
     .from('profiles')
     .update({ subscription_status: status })
-    .eq('id', data.user.id)
+    .eq('id', user.id)
 }
