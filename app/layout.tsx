@@ -10,6 +10,9 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
+  verification: {
+    google: "A6vIS18lsVk1HSAgUAnW5kt7BrrEQE8UPmm8lpPpGoU",
+  },
   title: "HubChat - 全部のチャット、ひとつのアプリに。",
   description: "Slack、Chatwork、Teams、LINE WORKS…増え続けるチャットを1画面に集約。返信漏れゼロで仕事が変わる。月額380円・14日間無料トライアル。",
   keywords: "HubChat, チャット統合, Slack, Chatwork, Teams, LINE WORKS, デスクトップアプリ, 返信漏れ",
