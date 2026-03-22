@@ -26,17 +26,20 @@ export async function POST(req: Request) {
     switch (event.type) {
       case 'checkout.session.completed': {
         const session = event.data.object as Stripe.Checkout.Session
-        const email = session.customer_details?.email
-        if (email) await updateStatus(supabase, email, 'active')
+        // metadataのuser_idを直接使用
+        const userId = session.metadata?.user_id
+        if (userId) {
+          await updateStatusById(supabase, userId, 'active')
+        }
         break
       }
 
       case 'customer.subscription.updated': {
         const sub = event.data.object as Stripe.Subscription
         const customer = await stripe.customers.retrieve(sub.customer as string) as Stripe.Customer
-        if (customer.email) {
+        if (customer.metadata?.user_id) {
           const status = sub.status === 'active' ? 'active' : 'expired'
-          await updateStatus(supabase, customer.email, status)
+          await updateStatusById(supabase, customer.metadata.user_id, status)
         }
         break
       }
@@ -44,7 +47,9 @@ export async function POST(req: Request) {
       case 'customer.subscription.deleted': {
         const sub = event.data.object as Stripe.Subscription
         const customer = await stripe.customers.retrieve(sub.customer as string) as Stripe.Customer
-        if (customer.email) await updateStatus(supabase, customer.email, 'expired')
+        if (customer.metadata?.user_id) {
+          await updateStatusById(supabase, customer.metadata.user_id, 'expired')
+        }
         break
       }
     }
@@ -57,13 +62,9 @@ export async function POST(req: Request) {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-async function updateStatus(supabase: any, email: string, status: string) {
-  const { data } = await supabase.auth.admin.listUsers()
-  const user = data?.users?.find((u: { email?: string }) => u.email === email)
-  if (!user) return
-
+async function updateStatusById(supabase: any, userId: string, status: string) {
   await supabase
     .from('profiles')
     .update({ subscription_status: status })
-    .eq('id', user.id)
+    .eq('id', userId)
 }
